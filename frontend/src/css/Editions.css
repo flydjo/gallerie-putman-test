@@ -1,0 +1,20 @@
+.editionsContainer {
+    padding: 80px 0px 0px 0px;
+}
+
+.listArtistsContainer {
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+}
+
+.listArtists {
+    list-style: none;
+    max-height: 500px;
+    overflow-y: hidden;
+    overflow: scroll;
+}
+
+.listArtists > li {
+    margin: 10px 0px 0px 15px;
+    font-size: 2em;
+}

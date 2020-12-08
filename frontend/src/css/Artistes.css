@@ -1,3 +1,23 @@
 .artistesContainer {
     padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cartArtist {
+    margin: 40px;
+    width: 25%;
+    height: 200px;
+}
+
+.cartArtistImg {
+    width: 100%;
+    height: 100%;
+}
+
+.cartArtistTitle{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
 }

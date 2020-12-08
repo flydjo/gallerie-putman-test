@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Artistes from "./pages/Artistes";
+import Editions from "./pages/Editions";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route path="/artistes">
             <Artistes />
+          </Route>
+          <Route path="/editions">
+            <Editions />
           </Route>
         </Switch>
       </div>
