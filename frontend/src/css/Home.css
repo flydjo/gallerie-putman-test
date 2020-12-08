@@ -1,0 +1,99 @@
+.homeContainer {
+    margin: 0;
+    padding: 0;
+}
+
+.homeBanniere {
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/banniere-gallerie.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nextExpos {
+    height: 500px;
+    display: flex;
+}
+
+.homeSecondaryTitle {
+    font-size: 2.2em;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.nextExpoDetail {
+    
+    width: 50%;
+}
+
+.nextExpoDetailLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nextExpoDetailImg {
+    width: 90%;
+    height: 90%;
+}
+
+.nextExpoDetailImgOverlay {
+    visibility: hidden;
+    left: 0;
+    bottom: 0;
+}
+
+.homeNews {
+    height: 600px;
+    display: flex;
+}
+
+.homeNewsDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeNewsDetailImg {
+    width: 60%;
+    height: 90%;
+}
+
+/* .nextExpoDetailImgOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.nextExpoDetailImg:hover .nextExpoDetailImgOverlay {
+    opacity: 1;
+}
+
+.nextExpoDetailImgOverlayText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+} */
