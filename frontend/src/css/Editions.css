@@ -2,31 +2,31 @@
     padding: 80px 0px 0px 0px;
 }
 
-.listArtistsContainer {
+.listArtistsEditionsContainer {
     margin: 0px 0px 0px 0px;
     height: 100%;
     width: 25%;
 }
 
-.listArtists {
+.listArtistsEditions {
     list-style: none;
     max-height: 600px;
     overflow-y: hidden;
     overflow: scroll;
 }
 
-.listArtists > li {
+.listArtistsEditions > li {
     margin: 10px 0px 0px 15px;
     font-size: 1.7em;
 }
 
-.listArtists > li > a {
+.listArtistsEditions > li > a {
     font-family: Roboto-light;
     color:#D9D9D9;
     outline: none;
     text-decoration: none;
 }
 
-.listArtists > li > a:hover {
+.listArtistsEditions > li > a:hover {
     color: white;
 }

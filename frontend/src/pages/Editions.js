@@ -5,8 +5,9 @@ import '../css/Editions.css';
 function Editions() {
     return (
         <div className="editionsContainer">
-            <div className="listArtistsContainer">
-                <ul className="listArtists">
+            <div className="listArtistsEditionsContainer">
+                <input placeholder="Chercher un artiste" className="searchArtist" type="search" />
+                <ul className="listArtistsEditions">
                     <li><Link to="/artiste/1">Antoine Marquis</Link></li>
                     <li><Link to="/artiste/1">Henri Michaux</Link></li>
                     <li><Link to="/artiste/1">Rajak Ohanian</Link></li>
@@ -34,7 +35,7 @@ function Editions() {
                 </ul>
             </div>
             <div className="listPaints">
-            
+                
             </div>
         </div>
     );
