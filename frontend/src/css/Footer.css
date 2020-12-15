@@ -1,0 +1,14 @@
+footer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.infosAdressFooter {
+    padding: 15px;
+}
+
+.infosContactFooter {
+    padding: 15px;
+    margin-left: auto;
+}

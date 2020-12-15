@@ -12,49 +12,31 @@ function Artistes() {
         setShow(!show);
     }
 
+    const CartArtist = ({src, alt, nameArtist, to}) => (
+        // <div className="cartArtist">
+        //     <Link to={to}>
+        //         <img className="cartArtistImg" src={src} alt={alt} />
+        //         <h3 className="cartArtistTitle">{nameArtist}</h3>
+        //     </Link>
+        // </div>
+
+        <figure className="cartArtist">
+            <img className="cartArtistImg" src={src} alt={alt} />
+            <Link to={to}>
+                <figcaption>{nameArtist}</figcaption>
+            </Link>
+        </figure>
+    )
+
     return(
         <div>
             <div className="artistesContainer">
-                <div className="cartArtist">
-                    <img className="cartArtistImg" src={oeuvre1} alt="oeuvre1" />
-                    <h3 className="cartArtistTitle">Pierre Alechinsky</h3>
-                </div>
-                <div className="cartArtist">
-                    <img className="cartArtistImg" src={oeuvre2} alt="oeuvre1" />
-                    <h3 className="cartArtistTitle">Geneviève Asse</h3>
-                </div>
-                <div className="cartArtist">
-                    <img className="cartArtistImg" src={oeuvre3} alt="oeuvre1" />
-                    <h3 className="cartArtistTitle">Georg Baselitz</h3>
-                </div>
-                <div className="cartArtist">
-                    <img className="cartArtistImg" src={oeuvre2} alt="oeuvre1" />
-                    <h3 className="cartArtistTitle">Pierre Buraglio</h3>
-                </div>
-                <div className="cartArtist">
-                    <img className="cartArtistImg" src={oeuvre1} alt="oeuvre1" />
-                    <h3 className="cartArtistTitle">Pierre Alechinsky</h3>
-                </div>
-                <div className="cartArtist">
-                    <img className="cartArtistImg" src={oeuvre3} alt="oeuvre1" />
-                    <h3 className="cartArtistTitle">Georg Baselitz</h3>
-                </div>
-                <div className="cartArtist">
-                    <img className="cartArtistImg" src={oeuvre1} alt="oeuvre1" />
-                    <h3 className="cartArtistTitle">Pierre Alechinsky</h3>
-                </div>
-                <div className="cartArtist">
-                    <img className="cartArtistImg" src={oeuvre2} alt="oeuvre1" />
-                    <h3 className="cartArtistTitle">Geneviève Asse</h3>
-                </div>
-                <div className="cartArtist">
-                    <img className="cartArtistImg" src={oeuvre3} alt="oeuvre1" />
-                    <h3 className="cartArtistTitle">Georg Baselitz</h3>
-                </div>
-                <div className="cartArtist">
-                    <img className="cartArtistImg" src={oeuvre2} alt="oeuvre1" />
-                    <h3 className="cartArtistTitle">Pierre Buraglio</h3>
-                </div>
+                <CartArtist src={oeuvre1} alt="oeuvre1" nameArtist="Pierre Alechinsky" to='/artiste/1' />
+                <CartArtist src={oeuvre2} alt="oeuvre1" nameArtist="Georg Baselit" to='/artiste/1' />
+                <CartArtist src={oeuvre2} alt="oeuvre1" nameArtist="Pierre Alechinsky" to='/artiste/1' />
+                <CartArtist src={oeuvre2} alt="oeuvre1" nameArtist="Pierre Buraglio" to='/artiste/1' />
+                <CartArtist src={oeuvre1} alt="oeuvre1" nameArtist="Georg Baselit" to='/artiste/1' />
+                <CartArtist src={oeuvre3} alt="oeuvre1" nameArtist="Pierre Alechinsky" to='/artiste/1' />
             </div>
             <div className="showListArtistsButtonContainer">
                 <button onClick={toggleListArtists} className="showListArtistsButton">

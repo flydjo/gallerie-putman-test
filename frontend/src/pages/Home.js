@@ -7,7 +7,10 @@ import imgNews from '../images/news2.jpg';
 import {animHomeTitle, animHomeBanniereImg, animHomeBanniere} from '../animations/script';
 import banniereImg from '../images/banniere-gallerie.jpg';
 
+//Composant pour les titres de catégories
 const HomeInterline = ({title}) => <h2 className="homeSecondaryTitle">{title}</h2>;
+
+//Composant pour afficher image + texte
 const HomeFigLink = ({src, to, label, alt, full}) => (
     <figure className={full?'nextExposDetails full':'nextExposDetails'}>
         <img src={src} alt={alt} />
@@ -31,8 +34,6 @@ function Home() {
                     <img src={banniereImg} alt="gallerie-catherine-putman" />
                 </div>
             </div>
-
-            {/* <HomeBlockExpos  title='Expositions' src={expo1} to='/expo/1' label='Vernissage 15 octobre 2021' alt='vernissave'/> */}
 
             <HomeInterline title='Expositions' />
             <div className="nextExpos">

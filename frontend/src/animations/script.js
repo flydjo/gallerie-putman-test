@@ -8,3 +8,7 @@ export const animHomeBanniere = () => {
 
     t1.play();
 }
+
+export const animImgArtists = () => {
+    
+}
