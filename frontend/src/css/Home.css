@@ -4,96 +4,82 @@
 }
 
 .homeBanniere {
-    font-size: 2.5em;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url('../images/banniere-gallerie.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
 }
 
-.nextExpos {
-    height: 500px;
-    display: flex;
+.homeBanniereImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.homeBanniereImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.homeBanniereTitle {
+    opacity: 0;
+    font-size: 5rem;
+    z-index: 1;
 }
 
 .homeSecondaryTitle {
     font-size: 2.2em;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin: 2rem 0;
     display: flex;
     justify-content: center;
 }
 
-.nextExpoDetail {
-    
-    width: 50%;
-}
-
-.nextExpoDetailLink {
+.nextExpos {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    padding: 0 2rem;
+    justify-content: space-between;
+
 }
 
-.nextExpoDetailImg {
-    width: 90%;
-    height: 90%;
+.nextExposDetails {
+    position: relative;
+    width: calc(50% - 1rem);
 }
 
-.nextExpoDetailImgOverlay {
-    visibility: hidden;
-    left: 0;
-    bottom: 0;
-}
-
-.homeNews {
-    height: 600px;
-    display: flex;
-}
-
-.homeNewsDetail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.homeNewsDetailImg {
-    width: 60%;
-    height: 90%;
-}
-
-/* .nextExpoDetailImgOverlay {
-    position: absolute;
+.nextExposDetails figcaption {
+    position:  absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
+    font-size: 3rem;
+    color: white;
     height: 100%;
     width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
+    transition: opacity .3s ease;
 }
 
-.nextExpoDetailImg:hover .nextExpoDetailImgOverlay {
-    opacity: 1;
+.nextExposDetails figcaption:hover {
+    opacity: .8;
 }
 
-.nextExpoDetailImgOverlayText {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+.nextExposDetails.full {
+    width: 55%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* .nextExposDetails.full figure {
+    height: 75%;
 } */

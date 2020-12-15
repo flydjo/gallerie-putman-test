@@ -1,29 +1,43 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
+const navLinks = [
+    {
+        to: '/artistes',
+        label: 'Artistes'
+    },
+    {
+        to: '/editions',
+        label: 'Editions'
+    },
+    {
+        to: '/expositions',
+        label: 'Expositions'
+    },
+    {
+        to: '/actualites',
+        label: 'Actualites'
+    },
+    {
+        to: '/galerie',
+        label: 'Galerie'
+    },
+    
+];
+
+const HeaderLogo = () => <h1><Link to='/'>Galerie Catherine Putman</Link></h1>
+
+const HeaderLink = (props) => (
+    navLinks.map(({to, label}, i) => <li className="navLink"><Link to={to}>{label}</Link></li>)
+)
+
 function Header() {
     return (
         <header>
             <nav className="navbar">
+                <HeaderLogo />
                 <ul>
-                    <li className="navHome">
-                        <Link to="/">Galerie Catherine Putman</Link>
-                    </li>
-                    <li className="navArtistes">
-                        <Link to="/artistes">Artistes</Link>
-                    </li>
-                    <li className="navEditions">
-                        <Link to="/editions">Éditions</Link>
-                    </li>
-                    <li className="navExpositions">
-                        <Link to="/expositions">Expositions</Link>
-                    </li>
-                    <li className="navActualites">
-                        <Link to="/actualites">Actualités</Link>
-                    </li>
-                    <li className="navGalerie">
-                        <Link to="/galerie">Galerie</Link>
-                    </li>
+                    <HeaderLink />
                 </ul>
             </nav>
         </header>
