@@ -26,10 +26,10 @@ const navLinks = [
     
 ];
 
-const HeaderLogo = () => <h1><Link to='/'>Galerie Catherine Putman</Link></h1>
+const HeaderLogo = () => <h1><Link to='/'>Galerie d'art</Link></h1>
 
 const HeaderLink = (props) => (
-    navLinks.map(({to, label}, i) => <li className="navLink"><Link to={to}>{label}</Link></li>)
+    navLinks.map(({to, label}, i) => <li key={i} className="navLink"><Link to={to}>{label}</Link></li>)
 )
 
 function Header() {

@@ -1,5 +1,6 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
+import {animListArtists} from '../animations/script';
 import '../css/Artistes.css';
 import oeuvre1 from '../images/oeuvre1.jpg';
 import oeuvre2 from '../images/oeuvre2.jpg';
@@ -13,13 +14,6 @@ function Artistes() {
     }
 
     const CartArtist = ({src, alt, nameArtist, to}) => (
-        // <div className="cartArtist">
-        //     <Link to={to}>
-        //         <img className="cartArtistImg" src={src} alt={alt} />
-        //         <h3 className="cartArtistTitle">{nameArtist}</h3>
-        //     </Link>
-        // </div>
-
         <figure className="cartArtist">
             <img className="cartArtistImg" src={src} alt={alt} />
             <Link to={to}>
@@ -27,6 +21,13 @@ function Artistes() {
             </Link>
         </figure>
     )
+
+    useEffect(() => {
+        animListArtists();
+        // return () => {
+        //     cleanup
+        // };
+    }, [show]);
 
     return(
         <div>

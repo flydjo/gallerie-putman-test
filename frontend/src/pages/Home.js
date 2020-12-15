@@ -1,4 +1,4 @@
-import React, {useEffect, Fragment} from "react";
+import React, {useEffect} from "react";
 import {Link} from "react-router-dom";
 import '../css/Home.css';
 import expo1 from '../images/expo1.jpg';
@@ -29,7 +29,7 @@ function Home() {
     return(
         <div className="homeContainer">
             <div className="homeBanniere">
-                <h1 className="homeBanniereTitle">Galerie Catherine Putman</h1>
+                <h1 className="homeBanniereTitle">Galerie d'art</h1>
                 <div className="homeBanniereImg">
                     <img src={banniereImg} alt="gallerie-catherine-putman" />
                 </div>

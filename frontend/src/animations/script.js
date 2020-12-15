@@ -9,6 +9,13 @@ export const animHomeBanniere = () => {
     t1.play();
 }
 
-export const animImgArtists = () => {
-    
+export const animListArtists = () => {
+    //gsap.from('.listArtists', {duration: 1, ease: Expo.inOut, x: -500});
+
+    var t2 = gsap.timeline();
+
+    t2.from('.searchArtist', {duration: 1, ease: Expo.inOut, x: -500});
+    t2.from('.listArtists', {duration: 1, ease: Expo.inOut, x: -500});
+
+    t2.play();
 }
