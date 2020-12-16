@@ -7,15 +7,13 @@ export const animHomeBanniere = () => {
     t1.to('.homeBanniereTitle', {opacity: 1, duration: 0.5, ease: Expo.easeInOut});
 
     t1.play();
-}
+};
 
 export const animListArtists = () => {
-    //gsap.from('.listArtists', {duration: 1, ease: Expo.inOut, x: -500});
-
     var t2 = gsap.timeline();
 
-    t2.from('.searchArtist', {duration: 1, ease: Expo.inOut, x: -500});
-    t2.from('.listArtists', {duration: 1, ease: Expo.inOut, x: -500});
-
+    t2.from('.searchArtist', {duration: 1, ease: Expo.inOut, x: '-100%'});
+    t2.from('.listArtists li', {duration: 1, ease: Expo.inOut, x: '-100%', stagger: 0.07});
+    
     t2.play();
-}
+};

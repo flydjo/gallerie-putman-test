@@ -1,12 +1,13 @@
 .editionsContainer {
     padding: 80px 0px 0px 0px;
+    display: flex;
 }
 
-.listArtistsEditionsContainer {
+/* .listArtistsEditionsContainer {
     margin: 0px 0px 0px 0px;
     height: 100%;
     width: 25%;
-}
+} */
 
 .listArtistsEditions {
     list-style: none;
@@ -16,7 +17,7 @@
 }
 
 .listArtistsEditions > li {
-    margin: 10px 0px 0px 15px;
+    margin: 0 2rem;
     font-size: 1.7em;
 }
 
@@ -25,8 +26,48 @@
     color:#D9D9D9;
     outline: none;
     text-decoration: none;
+    margin-top: 5px;
 }
 
 .listArtistsEditions > li > a:hover {
     color: white;
+}
+
+.listFigure {
+    margin: 2rem 0 0 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.editionFigure {
+    position: relative;
+    width: 40%;
+    margin: .5rem;
+}
+
+.editionFigureImg {
+    width: 100%;
+    height: auto;
+}
+
+.editionFigure figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.editionFigure figcaption h4 {
+    font-size: 1.3rem;
+}
+
+.editionFigure figcaption p {
+    font-size: 1rem;
 }

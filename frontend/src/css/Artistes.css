@@ -108,6 +108,10 @@
     text-decoration: none;
 }
 
+.listArtists > li > a:hover {
+    color: white;
+}
+
 .searchArtist {
     margin: 2rem;
     /* margin: 15px; */

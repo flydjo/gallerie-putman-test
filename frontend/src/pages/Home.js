@@ -4,7 +4,7 @@ import '../css/Home.css';
 import expo1 from '../images/expo1.jpg';
 import expo2 from '../images/expo2.jpg';
 import imgNews from '../images/news2.jpg';
-import {animHomeTitle, animHomeBanniereImg, animHomeBanniere} from '../animations/script';
+import {animHomeBanniere} from '../animations/script';
 import banniereImg from '../images/banniere-gallerie.jpg';
 
 //Composant pour les titres de catégories
