@@ -12,6 +12,8 @@ function Expositions() {
                 <figcaption>
                     <h4>Agathe May</h4>
                     <h5>Le miroir aux alouettes</h5>
+
+                    
                     <h5>16 Janvier - 13 Mars 2021</h5>
                 </figcaption>
             </Link>
