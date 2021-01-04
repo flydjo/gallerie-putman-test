@@ -17,3 +17,7 @@ export const animListArtists = () => {
     
     t2.play();
 };
+
+export const animEditionsFigures = () => {
+    gsap.to('.editionFigure', {opacity: 1, scale: 1, duration: 1, ease: Expo.easeIn, stagger: 0.07});
+};

@@ -3,15 +3,13 @@
     display: flex;
 }
 
-/* .listArtistsEditionsContainer {
-    margin: 0px 0px 0px 0px;
-    height: 100%;
-    width: 25%;
-} */
+.listArtistsEditionsContainer {
+    /* position: fixed; */
+}
 
 .listArtistsEditions {
     list-style: none;
-    max-height: 600px;
+    max-height: 100vh;
     overflow-y: hidden;
     overflow: scroll;
 }
@@ -41,6 +39,7 @@
 }
 
 .editionFigure {
+    opacity: 0;
     position: relative;
     width: 40%;
     margin: .5rem;
@@ -48,7 +47,9 @@
 
 .editionFigureImg {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .editionFigure figcaption {
@@ -58,10 +59,16 @@
     flex-direction: column;
     width: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0;
     position: absolute;
     top: 0;
     bottom: 0;
+    margin: 0 auto;
+    transition: opacity 0.6 ease;
+}
+
+.editionFigure figcaption:hover {
+    opacity: 0.7;
 }
 
 .editionFigure figcaption h4 {

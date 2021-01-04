@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Artistes from "./pages/Artistes";
 import Editions from "./pages/Editions";
+import Expositions from "./pages/Expositions";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/editions">
             <Editions />
+          </Route>
+          <Route path="/expositions">
+            <Expositions />
           </Route>
         </Switch>
       </div>
