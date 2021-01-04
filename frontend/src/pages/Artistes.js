@@ -5,6 +5,7 @@ import '../css/Artistes.css';
 import oeuvre1 from '../images/oeuvre1.jpg';
 import oeuvre2 from '../images/oeuvre2.jpg';
 import oeuvre3 from '../images/oeuvre3.jpg';
+import artistsData from '../artistsData';
 
 function Artistes() {
     const [show, setShow] = useState(false);
@@ -12,6 +13,12 @@ function Artistes() {
     function toggleListArtists() {
         setShow(!show);
     }
+
+    const listArtists = artistsData.map(artist => (
+        <ul className="listArtists">
+            <li key={artist.id}><Link to={`/artiste/${artist.id}`}>{artist.name}</Link></li>
+        </ul>
+    ));
 
     const CartArtist = ({src, alt, nameArtist, to}) => (
         <figure className="cartArtist">
@@ -49,47 +56,7 @@ function Artistes() {
             ? 
             <div className="listArtistsContainer">
                 <input placeholder="Chercher un artiste" className="searchArtist" type="search" />
-                <ul className="listArtists">
-                    <li><Link to="/artiste/1">Antoine Marquis</Link></li>
-                    <li><Link to="/artiste/1">Henri Michaux</Link></li>
-                    <li><Link to="/artiste/1">Rajak Ohanian</Link></li>
-                    <li><Link to="/artiste/1">Antonio Saura</Link></li>
-                    <li><Link to="/artiste/1">Gérard Traquandi</Link></li>
-                    <li><Link to="/artiste/1">Jean-Pierre Pincemin</Link></li>
-                    <li><Link to="/artiste/1">Eloïse Van der Heyden</Link></li>
-                    <li><Link to="/artiste/1">Balthasar Burkhard</Link></li>
-                    <li><Link to="/artiste/1">Antoine Marquis</Link></li>
-                    <li><Link to="/artiste/1">Henri Michaux</Link></li>
-                    <li><Link to="/artiste/1">Rajak Ohanian</Link></li>
-                    <li><Link to="/artiste/1">Antonio Saura</Link></li>
-                    <li><Link to="/artiste/1">Gérard Traquandi</Link></li>
-                    <li><Link to="/artiste/1">Antoine Marquis</Link></li>
-                    <li><Link to="/artiste/1">Henri Michaux</Link></li>
-                    <li><Link to="/artiste/1">Rajak Ohanian</Link></li>
-                    <li><Link to="/artiste/1">Antonio Saura</Link></li>
-                    <li><Link to="/artiste/1">Gérard Traquandi</Link></li>
-                    <li><Link to="/artiste/1">Jean-Pierre Pincemin</Link></li>
-                    <li><Link to="/artiste/1">Eloïse Van der Heyden</Link></li>
-                    <li><Link to="/artiste/1">Balthasar Burkhard</Link></li>
-                    <li><Link to="/artiste/1">Antoine Marquis</Link></li>
-                    <li><Link to="/artiste/1">Henri Michaux</Link></li>
-                    <li><Link to="/artiste/1">Rajak Ohanian</Link></li>
-                    <li><Link to="/artiste/1">Antonio Saura</Link></li>
-                    <li><Link to="/artiste/1">Gérard Traquandi</Link></li>
-                    <li><Link to="/artiste/1">Antoine Marquis</Link></li>
-                    <li><Link to="/artiste/1">Henri Michaux</Link></li>
-                    <li><Link to="/artiste/1">Rajak Ohanian</Link></li>
-                    <li><Link to="/artiste/1">Antonio Saura</Link></li>
-                    <li><Link to="/artiste/1">Gérard Traquandi</Link></li>
-                    <li><Link to="/artiste/1">Jean-Pierre Pincemin</Link></li>
-                    <li><Link to="/artiste/1">Eloïse Van der Heyden</Link></li>
-                    <li><Link to="/artiste/1">Balthasar Burkhard</Link></li>
-                    <li><Link to="/artiste/1">Antoine Marquis</Link></li>
-                    <li><Link to="/artiste/1">Henri Michaux</Link></li>
-                    <li><Link to="/artiste/1">Rajak Ohanian</Link></li>
-                    <li><Link to="/artiste/1">Antonio Saura</Link></li>
-                    <li><Link to="/artiste/1">Gérard Traquandi</Link></li>
-                </ul>
+                {listArtists}
             </div>
             : ''}
 
