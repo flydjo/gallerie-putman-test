@@ -28,7 +28,9 @@ function Editions() {
 
     const listArtist = artistsData.map(artist => (
         <ul className="listArtistsEditions">
-            <li key={artist.id}><Link to={`/artiste/${artist.id}`}>{artist.name}</Link></li>
+            <li key={artist.id}>
+                <Link to={`/artiste/${artist.id}`}>{artist.name}</Link>
+            </li>
         </ul>
     ));
 
