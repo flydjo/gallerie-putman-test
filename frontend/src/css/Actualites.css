@@ -1,0 +1,36 @@
+.actualitesContainer {
+    padding: 80px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.actusFigure {
+    margin: 20px;
+    width: 25%;
+}
+
+.actusFigure img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+.actusFigure figcaption {
+    background-color: #242625;
+    color: #D9D9D9;
+    text-align: center;
+    opacity: .7;
+    transition: .4s;
+    padding: 5px;
+}
+
+.actusFigure:hover figcaption {
+    opacity: 1;
+}
+
+.actusFigure .actusFigureItem {
+    padding: 3px;
+    margin: 3px;
+}

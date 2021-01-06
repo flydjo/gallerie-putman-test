@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Artistes from "./pages/Artistes";
 import Editions from "./pages/Editions";
 import Expositions from "./pages/Expositions";
+import Actualites from "./pages/Actualites";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/expositions">
             <Expositions />
+          </Route>
+          <Route path="/actualites">
+            <Actualites />
           </Route>
         </Switch>
       </div>
