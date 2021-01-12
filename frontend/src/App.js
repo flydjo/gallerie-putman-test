@@ -7,6 +7,7 @@ import Artistes from "./pages/Artistes";
 import Editions from "./pages/Editions";
 import Expositions from "./pages/Expositions";
 import Actualites from "./pages/Actualites";
+import Galerie from "./pages/Galerie";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path="/actualites">
             <Actualites />
+          </Route>
+          <Route path="/galerie">
+            <Galerie />
           </Route>
         </Switch>
       </div>
